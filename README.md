@@ -5,6 +5,8 @@
 
 Datasette plugin that adds custom SQL functions for fuzzy string matching, built on top of the [Jellyfish](https://github.com/jamesturk/jellyfish) Python library by James Turk and Michael Stephens.
 
+Try out [the live demo](https://datasette-jellyfish.now.sh/fixtures-21da8a4?sql=SELECT%0D%0A++++soundex%28%22hello%22%29%2C+%0D%0A++++metaphone%28%22hello%22%29%2C+%0D%0A++++nysiis%28%22hello%22%29%2C+%0D%0A++++match_rating_codex%28%22hello%22%29%2C+%0D%0A++++porter_stem%28%22running%22%29%2C+%0D%0A++++levenshtein_distance%28%22hello%22%2C+%22hello+world%22%29%2C+%0D%0A++++damerau_levenshtein_distance%28%22hello%22%2C+%22hello+world%22%29%2C+%0D%0A++++hamming_distance%28%22hello%22%2C+%22hello+world%22%29%2C+%0D%0A++++jaro_distance%28%22hello%22%2C+%22hello+world%22%29%2C+%0D%0A++++jaro_winkler%28%22hello%22%2C+%22hello+world%22%29%2C+%0D%0A++++match_rating_comparison%28%22hello%22%2C+%22helloo%22%29%3B).
+
 Examples:
 
     SELECT soundex("hello");
