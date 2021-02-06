@@ -10,7 +10,7 @@ Datasette plugin that adds custom SQL functions for fuzzy string matching, built
 Interactive demos:
 
 * [soundex, metaphone, nysiis, match_rating_codex comparison](https://latest-with-plugins.datasette.io/fixtures?sql=SELECT%0D%0A++++soundex%28%3As%29%2C+%0D%0A++++metaphone%28%3As%29%2C+%0D%0A++++nysiis%28%3As%29%2C+%0D%0A++++match_rating_codex%28%3As%29&s=demo).
-* [distance functions comparison](https://latest-with-plugins.datasette.io/fixtures?sql=SELECT%0D%0A++++levenshtein_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++damerau_levenshtein_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++hamming_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++jaro_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++jaro_winkler%28%3As1%2C+%3As2%29%2C%0D%0A++++match_rating_comparison%28%3As1%2C+%3As2%29%3B&s1=barrack+obama&s2=barrack+h+obama)
+* [distance functions comparison](https://latest-with-plugins.datasette.io/fixtures?sql=SELECT%0D%0A++++levenshtein_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++damerau_levenshtein_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++hamming_distance%28%3As1%2C+%3As2%29%2C%0D%0A++++jaro_similarity%28%3As1%2C+%3As2%29%2C%0D%0A++++jaro_winkler_similarity%28%3As1%2C+%3As2%29%2C%0D%0A++++match_rating_comparison%28%3As1%2C+%3As2%29%3B&s1=barrack+obama&s2=barrack+h+obama)
 
 Examples:
 
@@ -30,9 +30,9 @@ Examples:
         -- Outputs 6
     SELECT hamming_distance("hello", "hello world");
         -- Outputs 6
-    SELECT jaro_distance("hello", "hello world");
+    SELECT jaro_similarity("hello", "hello world");
         -- Outputs 0.8181818181818182
-    SELECT jaro_winkler("hello", "hello world");
+    SELECT jaro_winkler_similarity("hello", "hello world");
         -- Outputs 0.890909090909091
     SELECT match_rating_comparison("hello", "helloo");
         -- Outputs 1
