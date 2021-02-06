@@ -18,7 +18,12 @@ setup(
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Simon Willison",
-    url="https://github.com/simonw/datasette-jellyfish",
+    url="https://datasette.io/plugins/datasette-jellyfish",
+    project_urls={
+        "Issues": "https://github.com/simonw/datasette-jellyfish/issues",
+        "CI": "https://github.com/simonw/datasette-jellyfish/actions",
+        "Changelog": "https://github.com/simonw/datasette-jellyfish/releases",
+    },
     license="Apache License, Version 2.0",
     version=VERSION,
     packages=["datasette_jellyfish"],
