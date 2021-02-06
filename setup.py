@@ -29,4 +29,6 @@ setup(
     packages=["datasette_jellyfish"],
     entry_points={"datasette": ["jellyfish = datasette_jellyfish"]},
     install_requires=["datasette", "jellyfish"],
+    extras_require={"test": ["pytest"]},
+    tests_require=["datasette-jellyfish[test]"],
 )

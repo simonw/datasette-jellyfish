@@ -5,7 +5,6 @@
 [![Tests](https://github.com/simonw/datasette-jellyfish/workflows/Test/badge.svg)](https://github.com/simonw/datasette-jellyfish/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-jellyfish/blob/main/LICENSE)
 
-
 Datasette plugin that adds custom SQL functions for fuzzy string matching, built on top of the [Jellyfish](https://github.com/jamesturk/jellyfish) Python library by James Turk and Michael Stephens.
 
 Interactive demos:

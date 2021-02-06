@@ -18,8 +18,8 @@ two_args = (
     "levenshtein_distance",
     "damerau_levenshtein_distance",
     "hamming_distance",
-    "jaro_distance",
-    "jaro_winkler",
+    "jaro_similarity",
+    "jaro_winkler_similarity",
     "match_rating_comparison",
 )
 
