@@ -10,7 +10,9 @@ one_args = (
     "match_rating_codex",
     # Stemming
     # https://jellyfish.readthedocs.io/en/latest/stemming.html
-    "porter_stem",
+    # REMOVED: https://github.com/jamesturk/jellyfish/blob/d5ae6d4d2af5771bfd0b572456d42e48f8690b89/docs/changelog.md
+    # OR PIN jellyfish==0.9.0
+    #"porter_stem",
 )
 two_args = (
     # String Comparison
