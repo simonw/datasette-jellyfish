@@ -3,7 +3,7 @@ import jellyfish
 
 one_args = (
     # Phonetic
-    # https://jellyfish.readthedocs.io/en/latest/phonetic.html
+    # https://jamesturk.github.io/jellyfish/functions/#phonetic-encoding
     "soundex",
     "metaphone",
     "nysiis",
@@ -11,7 +11,7 @@ one_args = (
 )
 two_args = (
     # String Comparison
-    # https://jellyfish.readthedocs.io/en/latest/comparison.html
+    # https://jamesturk.github.io/jellyfish/functions/#string-comparison
     "levenshtein_distance",
     "damerau_levenshtein_distance",
     "hamming_distance",
