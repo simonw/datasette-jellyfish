@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 
 
 def get_long_description():
@@ -28,7 +28,7 @@ setup(
     version=VERSION,
     packages=["datasette_jellyfish"],
     entry_points={"datasette": ["jellyfish = datasette_jellyfish"]},
-    install_requires=["datasette", "jellyfish>=0.8.2"],
+    install_requires=["datasette", "jellyfish==0.9.0"],
     extras_require={"test": ["pytest"]},
     tests_require=["datasette-jellyfish[test]"],
 )
