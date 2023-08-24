@@ -22,6 +22,8 @@ Examples:
         -- Outputs HAL
     SELECT match_rating_codex("hello");
         -- Outputs HLL
+    SELECT porter_stem("running");
+        -- Outputs run
     SELECT levenshtein_distance("hello", "hello world");
         -- Outputs 6
     SELECT damerau_levenshtein_distance("hello", "hello world");

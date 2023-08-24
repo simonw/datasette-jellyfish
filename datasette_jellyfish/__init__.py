@@ -8,6 +8,9 @@ one_args = (
     "metaphone",
     "nysiis",
     "match_rating_codex",
+    # Stemming
+    # https://jellyfish.readthedocs.io/en/latest/stemming.html
+    "porter_stem",
 )
 two_args = (
     # String Comparison
