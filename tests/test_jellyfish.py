@@ -10,12 +10,14 @@ import pytest
         ('metaphone("hello")', "HL"),
         ('nysiis("hello")', "HAL"),
         ('match_rating_codex("hello")', "HL"),
-        ('porter_stem("running")', "run"),
         ('levenshtein_distance("hello", "hello world")', 6),
         ('damerau_levenshtein_distance("hello", "hello world")', 6),
         ('hamming_distance("hello", "hello world")', 6),
         ('jaro_similarity("hello", "hello world")', pytest.approx(0.8181818181818182)),
-        ('jaro_winkler_similarity("hello", "hello world")', pytest.approx(0.890909090909091)),
+        (
+            'jaro_winkler_similarity("hello", "hello world")',
+            pytest.approx(0.890909090909091),
+        ),
         ('match_rating_comparison("hello", "helloo")', 1),
     ),
 )
